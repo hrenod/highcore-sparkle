@@ -38,7 +38,7 @@ class HighcoreSparkle
     sparkle = SparkleFormation.new(template_name) do
       @outputs = {}
 
-      registry!(:description, template_name)
+      #registry!(:description, template_name)
 
       components.each do |id, component|
         config = component[:config].clone.merge({:template => template_name})
